@@ -1,0 +1,629 @@
+================================================================================
+                    CAHIER DES CHARGES - CV EN LIGNE
+                           ANAÏS KADRI
+================================================================================
+
+DATE DE CRÉATION : 20 octobre 2025
+VERSION : 1.0
+STATUT : En développement
+
+
+================================================================================
+1. MÉTHODOLOGIE DE CRÉATION DE SITE & GESTION DE PROJET
+================================================================================
+
+1.1 PHASE D'ANALYSE/AUDIT
+--------------------------
+
+A) CYCLE DE DÉVELOPPEMENT D'UN SITE WEB
+   Le projet suit le cycle de développement classique en 6 phases :
+
+   1. ANALYSE ET AUDIT
+      - Définition des besoins et objectifs
+      - Analyse de la cible (recruteurs tech)
+      - Benchmark des CV en ligne existants
+      - Identification des contraintes techniques
+
+   2. CONCEPTION
+      - Architecture de l'information
+      - Maquettage et wireframes
+      - Choix de la charte graphique
+      - Planification des fonctionnalités
+
+   3. DÉVELOPPEMENT
+      - Intégration HTML/CSS
+      - Développement JavaScript
+      - Intégration des animations
+      - Tests unitaires
+
+   4. TESTS ET VALIDATION
+      - Tests de compatibilité navigateurs
+      - Tests responsive
+      - Validation W3C
+      - Tests de performance
+
+   5. DÉPLOIEMENT
+      - Mise en ligne
+      - Configuration domaine
+
+   6. MAINTENANCE
+      - Mises à jour contenu
+      - Corrections bugs
+      - Évolutions fonctionnelles
+
+B) POINTS CLÉS DU PROJET
+   - Site vitrine personnel (pas de backend complexe)
+   - Single Page Application pour fluidité
+   - Accent sur l'UX et le design immersif
+   - Performance et compatibilité prioritaires
+   - Évolutivité du contenu (portfolio)
+
+C) ÉTAPES À RESPECTER
+   ✓ ÉTAPE 1 : Définition du concept et thématique (COMPLÉTÉE)
+   ✓ ÉTAPE 2 : Structuration du contenu (COMPLÉTÉE)
+   ✓ ÉTAPE 3 : Développement front-end (COMPLÉTÉE)
+   ⏳ ÉTAPE 4 : Personnalisation du contenu (EN COURS)
+   ☐ ÉTAPE 5 : Tests et validation
+   ☐ ÉTAPE 6 : Optimisation
+   ☐ ÉTAPE 7 : Déploiement en ligne
+   ☐ ÉTAPE 8 : Promotion et maintenance
+
+
+1.2 INSPIRATION ET DOCUMENTATION
+----------------------------------
+
+A) INSPIRATION GRAPHIQUE
+   - Thème cyberpunk inspiré de l'esthétique néon années 80
+   - Références visuelles : Tron, Matrix, Blade Runner
+   - Design de jeux vidéo rétro-futuristes
+   - Interfaces de science-fiction (hologrammes, terminaux)
+
+B) BENCHMARKING
+   Sites analysés pour inspiration :
+   - Portfolios de développeurs avec animations avancées
+   - CV interactifs avec navigation fluide
+   - Sites utilisant Three.js pour effets 3D
+   - Designs cyberpunk et interfaces futuristes
+
+C) DOCUMENTATION TECHNIQUE CONSULTÉE
+   - MDN Web Docs (HTML5, CSS3, JavaScript)
+   - Three.js Official Documentation (r128)
+   - CSS Tricks pour animations avancées
+   - W3Schools pour référence rapide
+   - Can I Use pour compatibilité navigateurs
+   - Codepen pour exemples d'animations
+
+D) RESSOURCES GRAPHIQUES
+   - Images d'assets (vaisseau, météorite) : création personnelle/sources libres
+   - Palette de couleurs : outils de génération (Coolors, Adobe Color)
+   - Icônes : Émojis natifs Unicode
+
+
+================================================================================
+2. PRÉSENTATION DU PROJET
+================================================================================
+
+2.1 CONTEXTE
+-------------
+Création d'un CV en ligne interactif et moderne pour présenter le profil
+professionnel d'Anaïs Kadri, développeur Full-Stack junior.
+
+2.2 OBJECTIFS PRINCIPAUX
+--------------------------
+- Créer une présence en ligne professionnelle et moderne
+- Se démarquer des CV traditionnels par un design interactif cyberpunk/spatial
+- Présenter compétences, formations, portfolio et coordonnées de manière attractive
+- Faciliter le téléchargement du CV au format PDF
+- Offrir une expérience utilisateur immersive et mémorable
+
+2.3 PUBLIC CIBLE
+-----------------
+- Recruteurs en technologies de l'information
+- Entreprises à la recherche de développeurs Full-Stack
+- Agences digitales et startups
+- Professionnels du secteur tech
+
+
+================================================================================
+3. SPÉCIFICATIONS FONCTIONNELLES
+================================================================================
+
+3.1 STRUCTURE DU SITE
+----------------------
+Site web mono-page (Single Page Application) organisé en 5 sections :
+
+A) ACCUEIL
+   - Présentation générale du profil
+   - Localisation (Bruxelles, Belgique)
+   - Statut de disponibilité (Disponible/Non disponible)
+   - Niveau d'expérience (Junior)
+   - Avatar ou photo de profil
+
+B) FORMATION
+   - Timeline chronologique des formations et expériences
+   - Formation Web Developer (Interface3, 2025-2026)
+   - Expérience Assistante Dentaire (ULB-EFP, 2019-2025)
+   - CESI - Sciences (Notre Dame des Champs, 2015-2016)
+   - Icône de téléchargement du CV en PDF
+
+C) PORTFOLIO
+   - Grille de projets (minimum 6 projets)
+   - Pour chaque projet :
+     * Titre du projet
+     * Description courte
+     * Technologies utilisées (tags)
+     * Statut (Actif, En cours, Complété)
+     * Liens vers démo et code source
+   - Projets actuels :
+     * Security Point (PHP, Javascript, MySQL)
+     * CV en ligne (Html, css)
+
+D) COMPÉTENCES
+   - Classification par catégories :
+     * Front-End : JavaScript/TypeScript, React/Vue.js, HTML5/CSS3
+     * Back-End : Node.js/Express, Python/Django, SQL/MongoDB
+     * DevOps : Docker, AWS/Azure
+   - Barres de progression visuelles pour chaque compétence
+   - Pourcentage de maîtrise affiché
+
+E) CONTACT
+   - Cartes d'informations de contact :
+     * Email professionnel
+     * Profil LinkedIn
+     * Compte GitHub
+     * Numéro de téléphone
+   - Liens cliquables/fonctionnels
+
+3.2 FONCTIONNALITÉS INTERACTIVES
+----------------------------------
+- Navigation fluide entre sections sans rechargement de page
+- Menu de navigation avec 5 boutons :
+  * Icônes visuelles pour chaque section
+  * État actif/inactif visible
+  * Navigation au clic
+
+- Éléments animés flottants :
+  * Vaisseau spatial avec tooltip d'informations de contact
+  * Météorite avec tooltip et lien de téléchargement CV
+
+- Effets visuels :
+  * Effet glitch sur le titre principal
+  * Scanline animée (effet écran vintage)
+  * Bordures animées sur les cartes
+  * Barres de chargement animées
+  * Transitions fluides entre sections
+
+- Modal 3D pour les démos de projets (intégration Three.js)
+
+3.3 TÉLÉCHARGEMENT DE CV
+-------------------------
+- Bouton de téléchargement principal (météorite flottante)
+- Icône de téléchargement secondaire dans la section Formation
+- Format de fichier : PDF
+- Nom du fichier : CV_Anais_Kadri.pdf
+
+
+================================================================================
+4. SPÉCIFICATIONS TECHNIQUES
+================================================================================
+
+4.1 TECHNOLOGIES UTILISÉES
+----------------------------
+- HTML5 (structure sémantique)
+- CSS3 (animations, transitions, effets visuels)
+- JavaScript vanilla (interactions, navigation)
+- Three.js (r128) pour les effets 3D
+
+4.2 ARCHITECTURE DES FICHIERS
+-------------------------------
+cv/
+├── index.html              # Structure HTML principale
+├── style.css               # Styles et animations
+├── script.js               # Logique JavaScript
+└── Assets/                 # Ressources visuelles
+    ├── fd166e25...png      # Image vaisseau spatial
+    └── c12b9fc7...png      # Image météorite
+
+4.3 COMPATIBILITÉ
+------------------
+- Navigateurs modernes (Chrome, Firefox, Safari, Edge)
+- Support des dernières versions de navigateurs
+- Design responsive (mobile, tablette, desktop)
+- Viewport optimisé pour différentes résolutions
+
+4.4 PERFORMANCE
+----------------
+- Chargement optimisé des ressources
+- CDN pour les bibliothèques externes (Three.js)
+- Animations CSS optimisées (GPU acceleration)
+- Pas de rechargement de page (SPA)
+
+
+================================================================================
+5. SPÉCIFICATIONS GRAPHIQUES
+================================================================================
+
+5.1 THÈME VISUEL
+-----------------
+Style : Cyberpunk / Futuriste ou Rétro / Arcade / Spatial
+Ambiance : Technologique, moderne, immersive
+
+5.2 PALETTE DE COULEURS
+------------------------
+- Couleurs principales :
+  * Néon cyan/bleu électrique
+  * Violet/magenta
+  * Noir profond
+  * Vert terminal/matrix
+- Effets de lueur (glow effects)
+- Dégradés néon
+
+5.3 TYPOGRAPHIE
+----------------
+- Police principale : Monospace/Terminal style
+- Utilisation de préfixes de commande (>, $, //)
+- Noms de sections style fichiers système (.EXE, .LOG, .DAT, .SYS, .INI)
+
+5.4 ÉLÉMENTS VISUELS
+---------------------
+- Scanline animée sur toute la page
+- Bordures animées sur les cartes
+- Barres de chargement
+- Effet glitch sur le titre
+- Icônes emoji pour navigation et contact
+- Gradient backgrounds
+- Effets de particules potentiels
+
+
+================================================================================
+6. EXPÉRIENCE UTILISATEUR (UX)
+================================================================================
+
+6.1 NAVIGATION
+---------------
+- Navigation intuitive et claire
+- Boutons bien identifiables
+- Feedback visuel sur les interactions (hover, active states)
+- Tooltips informatifs sur éléments flottants
+
+6.2 ACCESSIBILITÉ
+------------------
+- Attributs alt sur les images
+- Liens descriptifs
+- Structure sémantique HTML
+- Contraste suffisant pour lisibilité
+
+6.3 INTERACTIVITÉ
+------------------
+- Réponse immédiate aux actions utilisateur
+- Animations fluides et non intrusives
+- Survol interactif sur tous les éléments cliquables
+- Système de modal pour visualisation projets
+
+
+================================================================================
+7. RÉSULTATS OBTENUS PAR ÉTAPE
+================================================================================
+
+7.1 PHASE 1 : STRUCTURE ET DESIGN (COMPLÉTÉE)
+-----------------------------------------------
+
+RÉSULTATS :
+✓ Structure HTML5 sémantique créée avec 5 sections principales
+✓ Navigation fluide entre sections sans rechargement
+✓ Menu de navigation avec 5 boutons iconographiques fonctionnels
+✓ Architecture Single Page Application opérationnelle
+
+LIVRABLES :
+- index.html (structure complète)
+- style.css (base du design)
+- script.js (navigation de base)
+
+PROBLÈMES RENCONTRÉS :
+- Aucun problème majeur
+- Apprentissage de la structure SPA en JavaScript vanilla
+
+TEMPS ESTIMÉ : 3-4 heures
+
+
+7.2 PHASE 2 : DESIGN CYBERPUNK ET ANIMATIONS (COMPLÉTÉE)
+----------------------------------------------------------
+
+RÉSULTATS :
+✓ Thème cyberpunk/spatial implémenté avec succès
+✓ Palette de couleurs néon (cyan, violet, vert) appliquée
+✓ Effet scanline animé sur toute la page
+✓ Effet glitch sur le titre principal fonctionnel
+✓ Bordures animées sur les cartes
+✓ Barres de progression animées pour compétences
+✓ Éléments flottants (vaisseau + météorite) avec tooltips
+✓ Transitions fluides entre sections
+
+LIVRABLES :
+- CSS avancé avec animations keyframes
+- Effets visuels cyberpunk complets
+- Assets graphiques intégrés (images PNG)
+
+PROBLÈMES RENCONTRÉS :
+- Optimisation des performances des animations
+- Compatibilité des effets CSS sur différents navigateurs
+- Ajustement des timings d'animation pour fluidité
+
+TEMPS ESTIMÉ : 5-6 heures
+
+
+7.3 PHASE 3 : INTÉGRATION THREE.JS (COMPLÉTÉE)
+------------------------------------------------
+
+RÉSULTATS :
+✓ Bibliothèque Three.js (r128) intégrée via CDN
+✓ Modal 3D pour démonstration projets créée
+
+LIVRABLES :
+- Intégration Three.js dans script.js
+- Système de modal 3D opérationnel
+
+TEMPS ESTIMÉ : 3-4 heures
+
+
+7.4 PHASE 4 : CONTENU ET PERSONNALISATION (EN COURS)
+------------------------------------------------------
+
+RÉSULTATS ACTUELS :
+✓ Structure de contenu définie
+✓ Projets exemples créés (Security Point, CV en ligne)
+⏳ Compétences techniques listées
+⏳ Informations de contact à finaliser
+⏳ Fichier PDF du CV à créer
+⏳ Liens vers projets réels à ajouter
+
+PROBLÈMES RENCONTRÉS :
+- Collecte des liens vers projets réels
+- Création du CV PDF professionnel
+- Choix des screenshots de projets ou vidéo
+
+TEMPS ESTIMÉ : 2-3 heures
+
+
+================================================================================
+8. CONTENU À METTRE À JOUR
+================================================================================
+
+8.1 INFORMATIONS PERSONNELLES
+-------------------------------
+☐ Email réel (actuellement : exemple générique)
+☐ Numéro de téléphone réel
+☐ Lien LinkedIn professionnel
+☐ Lien GitHub personnel
+☐ Avatar/Photo professionnelle (remplacer "VN" par image)
+
+8.2 PROJETS PORTFOLIO
+----------------------
+☐ Liens vers démos fonctionnelles
+☐ Liens vers repositories GitHub
+☐ Images/screenshots pour chaque projet
+☐ Descriptions détaillées et réalistes des projets
+
+8.3 FICHIER CV
+---------------
+☐ Créer et intégrer le fichier PDF du CV
+☐ Vérifier que le téléchargement fonctionne
+
+
+================================================================================
+9. AMÉLIORATIONS FUTURES POSSIBLES
+================================================================================
+
+9.1 FONCTIONNALITÉS ADDITIONNELLES
+------------------------------------
+- Formulaire de contact fonctionnel
+- Mode clair/sombre (light/dark theme toggle)
+- Support multilingue (FR/EN)
+- Animations 3D plus avancées
+- Particules interactives au mouvement de la souris
+- Sons cyberpunk sur interactions
+- Blog intégré
+- Compteur de visites
+
+
+================================================================================
+10. HÉBERGEMENT ET DÉPLOIEMENT
+================================================================================
+
+10.1 OPTIONS D'HÉBERGEMENT
+---------------------------
+- GitHub Pages (gratuit, facile)
+- OVH ou autre hébergeur traditionnel
+- Server Interface3
+
+10.2 NOM DE DOMAINE
+-------------------
+Options possibles :
+- anaiskadri.com
+- anaiskadri.dev
+- anais-kadri.be
+- Sous-domaine GitHub : username.github.io/cv
+
+10.3 DÉPLOIEMENT
+----------------
+ÉTAPES DE DÉPLOIEMENT :
+
+1. Préparation des fichiers
+   - Vérification de tous les liens
+   - Optimisation des images
+   - Test local final
+   - Validation W3C HTML/CSS
+
+2. Mise en ligne
+   - Upload des fichiers
+   - Configuration DNS si domaine personnalisé
+   - Test sur environnement de production
+
+3. Vérification post-déploiement
+   - Test de tous les liens
+   - Vérification responsive
+   - Test de performance (Lighthouse)
+
+
+
+================================================================================
+11. MAINTENANCE ET ÉVOLUTION
+================================================================================
+
+11.1 MISES À JOUR RÉGULIÈRES
+-----------------------------
+- Actualisation des projets portfolio
+- Mise à jour des compétences
+- Ajout de nouvelles formations/certifications
+- Rafraîchissement du design si nécessaire
+
+11.2 MONITORING
+---------------
+- Vérification régulière des liens
+- Test de fonctionnement sur différents navigateurs
+- Surveillance des performances
+- Backup régulier des fichiers
+
+
+================================================================================
+12. CRITÈRES DE VALIDATION
+================================================================================
+
+12.1 CRITÈRES TECHNIQUES
+-------------------------
+☐ Toutes les sections sont fonctionnelles
+☐ Navigation fluide sans erreurs
+☐ Animations performantes (pas de lag)
+☐ Compatible tous navigateurs modernes
+☐ Responsive sur mobile/tablette/desktop
+☐ Téléchargement CV fonctionnel
+☐ Tous les liens externes fonctionnels
+
+12.2 CRITÈRES VISUELS
+----------------------
+☐ Design cohérent avec le thème cyberpunk
+☐ Palette de couleurs harmonieuse
+☐ Typographie lisible
+☐ Animations fluides et professionnelles
+☐ Effets visuels non intrusifs
+
+12.3 CRITÈRES DE CONTENU
+--------------------------
+☐ Informations personnelles complètes et à jour
+☐ Projets portfolio documentés avec liens
+☐ Compétences représentatives du niveau réel
+☐ CV PDF disponible et à jour
+☐ Aucune faute d'orthographe
+
+
+================================================================================
+13. PLANNING PRÉVISIONNEL
+================================================================================
+
+PHASE 1 : STRUCTURE ET DESIGN (COMPLÉTÉE - 3-4h)
+-------------------------------------------------
+✓ Création structure HTML
+✓ Intégration CSS avec thème cyberpunk
+✓ Mise en place JavaScript de base
+STATUT : 100% complété
+
+PHASE 2 : ANIMATIONS ET EFFETS (COMPLÉTÉE - 5-6h)
+---------------------------------------------------
+✓ Animations CSS avancées
+✓ Intégration Three.js
+✓ Effets cyberpunk (glitch, scanline, etc.)
+STATUT : 100% complété
+
+PHASE 3 : CONTENU ET PERSONNALISATION (EN COURS - 2-3h)
+---------------------------------------------------------
+⏳ Mise à jour informations personnelles réelles
+⏳ Création projets portfolio authentiques
+⏳ Génération fichier CV PDF
+STATUT : 40% complété
+DEADLINE : À compléter avant déploiement
+
+PHASE 4 : OPTIMISATION ET TESTS (À VENIR - 3-4h)
+-------------------------------------------------
+☐ Tests compatibilité navigateurs (Chrome, Firefox, Safari, Edge)
+☐ Tests responsive (mobile, tablette, desktop)
+☐ Validation W3C HTML/CSS
+☐ Tests de performance (Lighthouse)
+☐ Optimisation des images et assets
+☐ Minification CSS/JS
+☐ Tests de tous les liens et fonctionnalités
+DEADLINE : Avant déploiement
+
+PHASE 5 : DÉPLOIEMENT (À VENIR - 1-2h)
+----------------------------------------
+☐ Choix de la plateforme d'hébergement
+☐ Configuration du repository
+☐ Upload des fichiers
+☐ Configuration domaine (optionnel)
+☐ Tests en production
+☐ Vérification finale
+DEADLINE : Fin de formation ou selon besoins
+
+PHASE 6 : MAINTENANCE (CONTINUE)
+---------------------------------
+☐ Mises à jour régulières du contenu
+☐ Ajout de nouveaux projets
+☐ Actualisation des compétences
+☐ Corrections bugs éventuels
+FRÉQUENCE : Mensuelle ou selon évolution
+
+
+TEMPS TOTAL ESTIMÉ : 15-20 heures
+TEMPS RÉALISÉ : 11-14 heures
+TEMPS RESTANT : 4-6 heures
+
+
+
+================================================================================
+14. BUDGET
+================================================================================
+
+COÛTS DE DÉVELOPPEMENT :
+-------------------------
+Main d'œuvre développement : 0€ (projet personnel/formation)
+Temps investi : 15-20 heures
+Valeur estimée (si facturé) : 750-1000€ (à 50€/h junior)
+
+COÛTS TECHNIQUES :
+-------------------
+✓ Hébergement GitHub Pages : GRATUIT
+✓ Hébergement Netlify (plan gratuit) : GRATUIT
+✓ Hébergement Vercel (plan gratuit) : GRATUIT
+✓ Bibliothèque Three.js (CDN) : GRATUIT
+
+
+RETOUR SUR INVESTISSEMENT :
+-----------------------------
+- Augmentation visibilité professionnelle
+- Différenciation par rapport aux CV traditionnels
+- Portfolio évolutif pour nouveaux projets
+- Démonstration compétences techniques concrètes
+- Outil de personal branding durable
+
+
+================================================================================
+15. CONTACTS ET RESSOURCES
+================================================================================
+
+15.1 DÉVELOPPEMENT
+-------------------
+Développeur : Anaïs Kadri
+Formation : Interface3, Bruxelles (2025-2026)
+Spécialisation : Développement Full-Stack
+
+15.2 RESSOURCES TECHNIQUES
+---------------------------
+- Documentation HTML5 : https://developer.mozilla.org
+- Three.js documentation : https://threejs.org/docs/
+- CSS animations : https://animate.style
+- Icons : Emoji natifs
+
+
+================================================================================
+FIN DU CAHIER DES CHARGES
+================================================================================
+
