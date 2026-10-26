@@ -29,7 +29,7 @@
             <div class="tooltip-content">
                 <h4>TÉLÉCHARGER MON CV</h4>
                 <p>Cliquez pour obtenir mon CV au format PDF</p>
-                <a href="Assets/CV_Kadri_Anais_2025.pdf" download="CV_Kadri_Anais_2025.pdf" class="download-btn">
+                <a href="Assets/CV_Kadri_Anais_2025_2026.pdf" download="CV_Kadri_Anais_2025_2026.pdf" class="download-btn">
                     TÉLÉCHARGER
                 </a>
             </div>
@@ -70,6 +70,49 @@
         <h2>&gt; ACCUEIL.EXE</h2>
         <div class="loading-bar"></div>
     </div>
+
+    <!-- Bandeau : sites en ligne mis en avant -->
+    <div class="featured-banner">
+        <div class="featured-banner-head">
+            <span class="featured-label"><span class="status-online">●</span> MES SITES EN LIGNE</span>
+            <button class="featured-all" data-goto="portfolio">Voir tous mes projets →</button>
+        </div>
+        <div class="featured-track">
+            <a class="featured-site" href="https://inxide.space" target="_blank" rel="noopener" style="--accent: #3b82f6;">
+                <span class="featured-thumb thumb-inxide"><img src="./Assets/inxide-logo.svg" alt=""></span>
+                <span class="featured-text">
+                    <span class="featured-name">Inxide • Space</span>
+                    <span class="featured-desc">Réseau social politique, actu &amp; débats en direct</span>
+                    <span class="featured-url">inxide.space ↗</span>
+                </span>
+            </a>
+            <a class="featured-site" href="http://wad11.interface3.be" target="_blank" rel="noopener" style="--accent: #38bdf8;">
+                <span class="featured-thumb"><img src="./Assets/9cb8d066-ffa5-42c4-8662-b79ecd80502f.jpeg" alt=""></span>
+                <span class="featured-text">
+                    <span class="featured-name">Milo.</span>
+                    <span class="featured-desc">Présences par reconnaissance faciale</span>
+                    <span class="featured-url">wad11.interface3.be ↗</span>
+                </span>
+            </a>
+            <a class="featured-site" href="https://arachno-recolt.com" target="_blank" rel="noopener" style="--accent: #9ca3af;">
+                <span class="featured-thumb"><img src="./Assets/arachno-recolt.jpg" alt=""></span>
+                <span class="featured-text">
+                    <span class="featured-name">Arachno-Recolt</span>
+                    <span class="featured-desc">Robot bio-mimétique d'extraction de venin</span>
+                    <span class="featured-url">arachno-recolt.com ↗</span>
+                </span>
+            </a>
+            <a class="featured-site" href="https://butterz-cosmetics.com" target="_blank" rel="noopener" style="--accent: #e8b86d;">
+                <span class="featured-thumb thumb-butterz">B</span>
+                <span class="featured-text">
+                    <span class="featured-name">Butterz Cosmetics</span>
+                    <span class="featured-desc">Ma marque de beurres corporels naturels</span>
+                    <span class="featured-url">butterz-cosmetics.com ↗</span>
+                </span>
+            </a>
+        </div>
+    </div>
+
     <div class="cyber-card">
         <div class="card-border"></div>
         <div class="profile-content">
@@ -84,13 +127,15 @@
             
             <div class="profile-info">
                 <p class="cyber-text">
-                    <span class="prompt">$</span> Bienvenue sur mon CV interactif ! Passionnée par les technologies émergentes et l'innovation digitale.
-                    Junior en développement web avec une vision futuriste.
+                    <span class="prompt">$</span> Développeuse web junior passionnée par les technologies émergentes, je m'investis actuellement comme bénévole à l'ULB dans une mission d'entraînement de véhicules autonomes par intelligence artificielle — simulation, perception et prise de décision en temps réel. En parallèle, je me forme activement en cybersécurité pour élargir mon spectre technique. Je suis à la recherche d'un poste en développement web où je pourrai allier créativité, rigueur et curiosité technologique.
                 </p>
                 <ul class="info-list">
                     <li><span class="label">LOCALISATION:</span> Bruxelles, Belgique</li>
-                    <li><span class="label">STATUT:</span> <span class="status-online">● DISPONIBLE A PARTIR DU 04/05/2026</span></li>
+                    <li><span class="label">STATUT:</span> <span class="status-online">● DISPONIBLE DÈS QUE POSSIBLE</span></li>
                     <li><span class="label">EXPÉRIENCE:</span> Junior</li>
+                    <li><span class="label">BÉNÉVOLAT:</span> ULB — IRIDIA (Centre de Recherche en IA) — Entraînement IA / Véhicule Autonome</li>
+                    <li><span class="label">PROJET:</span> Robot bio-mimétique — extraction de venin de scorpion <span class="status-online">● EN COURS</span> // Startlab & hub.brussels</li>
+                    <li><span class="label">EN FORMATION:</span> Cybersécurité (Interface3)</li>
                 </ul>
             </div>
         </div>
@@ -100,7 +145,7 @@
             <section id="formation" class="section">
                 <div class="section-header">
                     <h2>&gt; FORMATION.LOG</h2>
-                    <a href="Assets/CV_Kadri_Anais_2025.pdf" download="CV_Kadri_Anais_2025.pdf" class="cv-download-icon" title="Télécharger mon CV">
+                    <a href="Assets/CV_Kadri_Anais_2025_2026.pdf" download="CV_Kadri_Anais_2025_2026.pdf" class="cv-download-icon" title="Télécharger mon CV">
                         <span class="download-icon-text">Télécharge mon CV </span>
                     </a>
                     <div class="loading-bar"></div>
@@ -147,89 +192,189 @@
                     <h2>&gt; PORTFOLIO.DAT</h2>
                     <div class="loading-bar"></div>
                 </div>
+                <div class="portfolio-filters" role="tablist" aria-label="Filtrer les projets">
+                    <button class="filter-btn active" data-filter="all">Tous <span class="filter-count">6</span></button>
+                    <button class="filter-btn" data-filter="app">Applications web <span class="filter-count">3</span></button>
+                    <button class="filter-btn" data-filter="site">Sites vitrines <span class="filter-count">3</span></button>
+                </div>
+
                 <div class="portfolio-grid">
-                    <div class="project-card cyber-card">
+                    <article class="project-card cyber-card featured" data-category="app">
                         <div class="card-border"></div>
-                        <div class="project-image"><img src="./Assets/9cb8d066-ffa5-42c4-8662-b79ecd80502f.jpeg" alt="Milo.">
+                        <a class="project-image cover-inxide" href="https://inxide.space" target="_blank" rel="noopener" aria-label="Ouvrir Inxide • Space">
+                            <img src="./Assets/inxide-logo.svg" alt="Logo Inxide • Space" class="cover-logo">
+                            <span class="cover-title">Inxide • Space</span>
                             <div class="project-overlay">
-                                <span class="project-status">● ACTIF</span>
+                                <span class="project-type type-app">APPLICATION WEB</span>
+                                <span class="project-status status-live">● EN LIGNE</span>
+                            </div>
+                        </a>
+                        <div class="project-content">
+                            <div class="project-meta"><span>2026</span><span>Full-stack · Conception &amp; déploiement</span></div>
+                            <h3 class="project-title">Inxide • Space</h3>
+                            <p class="project-tagline">Le réseau social de la politique et de l'actualité.</p>
+                            <p class="project-description">
+                                Actualités mondiales pays par pays (71 éditions), pronostics politiques avec jetons virtuels, alertes citoyennes, débats vidéo en direct, chaînes TV du monde entier et réseau social complet : amis, messagerie, groupes et appels.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Angular 21</span>
+                                <span class="tech-tag">ASP.NET Core 9</span>
+                                <span class="tech-tag">Supabase</span>
+                                <span class="tech-tag">LiveKit</span>
+                                <span class="tech-tag">SignalR</span>
+                                <span class="tech-tag">Azure</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://inxide.space" target="_blank" rel="noopener" class="project-link primary">VOIR LE SITE ↗</a>
                             </div>
                         </div>
+                    </article>
+
+                    <article class="project-card cyber-card featured" data-category="site">
+                        <div class="card-border"></div>
+                        <a class="project-image" href="https://arachno-recolt.com" target="_blank" rel="noopener" aria-label="Ouvrir Arachno-Recolt">
+                            <img src="./Assets/arachno-recolt.jpg" alt="Robot Arachno-Recolt">
+                            <div class="project-overlay">
+                                <span class="project-type type-site">SITE VITRINE</span>
+                                <span class="project-status status-progress">● EN COURS</span>
+                            </div>
+                        </a>
                         <div class="project-content">
-                            <h3 class="project-title">Milo.</h3>
+                            <div class="project-meta"><span>2026</span><span>Startlab &amp; hub.brussels</span></div>
+                            <h3 class="project-title">Arachno-Recolt</h3>
+                            <p class="project-tagline">Robot bio-mimétique d'extraction de venin de scorpion.</p>
                             <p class="project-description">
-                                Programme de gestion de présence et de sécurité pour les établissements scolaires et/ou entreprises avec prise de présence par reconnaissance faciale et système d'organisation.
+                                Site du projet : dossier de conception (accès sur clé d'habilitation) et base de connaissances arachnologiques. Le robot remplace l'électrostimulation par une stimulation éthologique, pilotée par une IA prédictive, pour une extraction sans souffrance animale.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">HTML</span>
+                                <span class="tech-tag">CSS</span>
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">Robotique</span>
+                                <span class="tech-tag">IA</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://arachno-recolt.com" target="_blank" rel="noopener" class="project-link primary">VOIR LE SITE ↗</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card cyber-card featured" data-category="site">
+                        <div class="card-border"></div>
+                        <a class="project-image cover-butterz" href="https://butterz-cosmetics.com" target="_blank" rel="noopener" aria-label="Ouvrir Butterz Cosmetics">
+                            <span class="cover-title">Butterz<small>COSMETICS</small></span>
+                            <div class="project-overlay">
+                                <span class="project-type type-site">SITE VITRINE</span>
+                                <span class="project-status status-progress">● BIENTÔT</span>
+                            </div>
+                        </a>
+                        <div class="project-content">
+                            <div class="project-meta"><span>2026</span><span>Co-fondatrice</span></div>
+                            <h3 class="project-title">Butterz Cosmetics</h3>
+                            <p class="project-tagline">Marque de beurres corporels naturels.</p>
+                            <p class="project-description">
+                                Co-fondation de la marque : formulation de la gamme, recherche de fournisseurs, mise en conformité réglementaire européenne (CPNP, règlement UE 1223/2009) et site web de la marque, en cours de lancement.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Entrepreneuriat</span>
+                                <span class="tech-tag">Formulation</span>
+                                <span class="tech-tag">Réglementation UE</span>
+                                <span class="tech-tag">Site web</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://butterz-cosmetics.com" target="_blank" rel="noopener" class="project-link primary">VOIR LE SITE ↗</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card cyber-card" data-category="app">
+                        <div class="card-border"></div>
+                        <a class="project-image" href="http://wad11.interface3.be" target="_blank" rel="noopener" aria-label="Ouvrir la démo de Milo.">
+                            <img src="./Assets/9cb8d066-ffa5-42c4-8662-b79ecd80502f.jpeg" alt="Milo.">
+                            <div class="project-overlay">
+                                <span class="project-type type-app">APPLICATION WEB</span>
+                                <span class="project-status status-live">● ACTIF</span>
+                            </div>
+                        </a>
+                        <div class="project-content">
+                            <div class="project-meta"><span>2025</span><span>Full-stack · Interface3</span></div>
+                            <h3 class="project-title">Milo.</h3>
+                            <p class="project-tagline">Gestion des présences par reconnaissance faciale.</p>
+                            <p class="project-description">
+                                J'ai conçu cette solution qui automatise la gestion des présences grâce à l'IA de Microsoft Azure. Du front-end JavaScript au backend PHP/MySQL, j'ai bâti une architecture complète pour offrir un outil de sécurité fiable et concret.
                             </p>
                             <div class="project-tech">
                                 <span class="tech-tag">PHP</span>
-                                <span class="tech-tag">Javascript</span>
-                                <span class="tech-tag">MySql</span>
+                                <span class="tech-tag">Symfony</span>
+                                <span class="tech-tag">MySQL</span>
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">Azure Face API</span>
+                                <span class="tech-tag">cron</span>
                             </div>
                             <div class="project-links">
-                                <a href="http://wad11.interface3.be" target="_blank" class="project-link">
-                                    <span class="link-icon"></span> DEMO
-                                </a>
-                                <a href="#" class="project-link info-btn" data-modal="info-modal">
-                                    <span class="link-icon"></span> Infos
-                                </a>
+                                <a href="http://wad11.interface3.be" target="_blank" rel="noopener" class="project-link primary">DÉMO ↗</a>
+                                <a href="#" class="project-link info-btn" data-modal="info-modal">ACCÈS DÉMO</a>
                             </div>
                         </div>
-                    </div>
-                    <div class="project-card cyber-card">
+                    </article>
+
+                    <article class="project-card cyber-card" data-category="app">
                         <div class="card-border"></div>
-                        <div class="project-image">
-                            <img src="./Assets/Capture d'écran 2025-12-09 195559.png" alt="Hackaton MyGouvernement.be">
+                        <a class="project-image" href="https://hackathon2025.interface3.be/" target="_blank" rel="noopener" aria-label="Ouvrir MyGouvernement.be">
+                            <img src="./Assets/Capture d'écran 2025-12-09 195559.png" alt="Hackathon MyGouvernement.be">
                             <div class="project-overlay">
-                                <span class="project-status">● ACTIF</span>
+                                <span class="project-type type-hack">HACKATHON</span>
+                                <span class="project-status status-live">● ACTIF</span>
                             </div>
-                        </div>
+                        </a>
                         <div class="project-content">
+                            <div class="project-meta"><span>2025</span><span>Équipe Interface3 🚀</span></div>
                             <h3 class="project-title">MyGouvernement.be</h3>
+                            <p class="project-tagline">Simulateur des finances publiques belges.</p>
                             <p class="project-description">
-                                Hackathon // Jeu interactif de simulation politique pour sensibiliser les citoyens à la répartition des budgets publics.
+                                Développé lors d'un hackathon, ce simulateur place l'utilisateur aux commandes du budget du pays. L'interface JavaScript et le backend Flask rendent visible l'impact de chaque décision politique.
                             </p>
                             <div class="project-tech">
-                                <span class="tech-tag">Html</span>
+                                <span class="tech-tag">HTML</span>
                                 <span class="tech-tag">CSS</span>
-                                <span class="tech-tag">Javascript</span>
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">Python</span>
                                 <span class="tech-tag">Flask</span>
                             </div>
                             <div class="project-links">
-                                <a target="_blank" href="https://hackathon2025.interface3.be/" class="project-link">
-                                    <span class="link-icon"></span> DEMO
-                                </a>
-                                <a target="_blank" href="https://github.com/Tran-Ch/HACKATHON-My-Gouvernement.git" class="project-link">
-                                    <span class="link-icon"></span> CODE
-                                </a>
+                                <a target="_blank" rel="noopener" href="https://hackathon2025.interface3.be/" class="project-link primary">DÉMO ↗</a>
+                                <a target="_blank" rel="noopener" href="https://github.com/Tran-Ch/HACKATHON-My-Gouvernement.git" class="project-link">CODE</a>
                             </div>
                         </div>
-                    </div>
-                    <div class="project-card cyber-card">
+                    </article>
+
+                    <article class="project-card cyber-card" data-category="site">
                         <div class="card-border"></div>
-                        <div class="project-image">
-                            <img src="./Assets/Capture d'écran 2025-12-09 195914.png" alt="">
+                        <a class="project-image" href="https://github.com/AnaK-pro/CV-Ana-s-Kadri/tree/main" target="_blank" rel="noopener" aria-label="Voir le code du CV en ligne">
+                            <img src="./Assets/Capture d'écran 2025-12-09 195914.png" alt="CV en ligne">
                             <div class="project-overlay">
-                                <span class="project-status">● COMPLÉTÉ</span>
+                                <span class="project-type type-perso">PORTFOLIO</span>
+                                <span class="project-status status-done">● COMPLÉTÉ</span>
                             </div>
-                        </div>
+                        </a>
                         <div class="project-content">
-                            <h3 class="project-title">CV en Ligne</h3>
+                            <div class="project-meta"><span>2025</span><span>Projet personnel</span></div>
+                            <h3 class="project-title">CV en ligne</h3>
+                            <p class="project-tagline">Ce portfolio interactif, au style cyberpunk.</p>
                             <p class="project-description">
-                                Mon CV interactif en ligne avec animations cyberpunk pour une expérience utilisateur immersive.    
+                                J'ai créé ce CV pour transformer ma présentation professionnelle en une expérience immersive : JavaScript vanilla, effets glitch et scanlines en CSS3, interface entièrement responsive.
                             </p>
                             <div class="project-tech">
-                                <span class="tech-tag">Html</span>
-                                <span class="tech-tag">Css</span>
+                                <span class="tech-tag">HTML</span>
+                                <span class="tech-tag">CSS</span>
                                 <span class="tech-tag">JavaScript</span>
                             </div>
                             <div class="project-links">
-                                <a target="_blank" href="https://github.com/AnaK-pro/CV-Ana-s-Kadri/tree/main" class="project-link">
-                                    <span class="link-icon"></span> CODE
-                                </a>
+                                <a target="_blank" rel="noopener" href="https://github.com/AnaK-pro/CV-Ana-s-Kadri/tree/main" class="project-link primary">CODE ↗</a>
                             </div>
                         </div>
-                    </div>
-                </div> 
+                    </article>
+                </div>
             </section>
 
             <section id="skills" class="section">
@@ -237,6 +382,12 @@
                     <h2>&gt; SKILLS.SYS</h2>
                     <div class="loading-bar"></div>
                 </div>
+                <div class="skills-search">
+                    <label for="skills-search-input" class="skills-search-prompt">$ grep</label>
+                    <input type="search" id="skills-search-input" class="skills-search-input" placeholder="Rechercher une compétence (ex. Azure, LiveKit, Kali…)" autocomplete="off">
+                    <span class="skills-search-count" aria-live="polite"></span>
+                </div>
+                <p class="skills-empty" hidden>Aucune compétence trouvée.</p>
                 <div class="skills-grid">
                     <div class="skill-category cyber-card">
                         <div class="card-border"></div>
@@ -255,6 +406,18 @@
                         </div>
                         <div class="skill-item">
                             <span class="skill-name">C#</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">TypeScript</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="75"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">SQL / T-SQL</span>
                             <div class="skill-bar">
                                 <div class="skill-progress" data-progress="80"></div>
                             </div>
@@ -281,6 +444,12 @@
                                 <div class="skill-progress" data-progress="80"></div>
                             </div>
                         </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Angular 21 (Signals, SSR, PWA)</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="80"></div>
+                            </div>
+                        </div>
                     </div>
                     <div class="skill-category cyber-card">
                         <div class="card-border"></div>
@@ -292,7 +461,7 @@
                             </div>
                         </div>
                         <div class="skill-item">
-                            <span class="skill-name">MongoDB / SQL</span>
+                            <span class="skill-name">PHP / Symfony</span>
                             <div class="skill-bar">
                                 <div class="skill-progress" data-progress="70"></div>
                             </div>
@@ -301,6 +470,182 @@
                             <span class="skill-name">WordPress (Intégration React)</span>
                             <div class="skill-bar">
                                 <div class="skill-progress" data-progress="85"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-category cyber-card">
+                        <div class="card-border"></div>
+                        <h3>.NET &amp; C#</h3>
+                        <div class="skill-item">
+                            <span class="skill-name">ASP.NET Core 9 (Web API REST)</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">ASP.NET Core MVC / Razor</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="75"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Entity Framework Core / LINQ</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">ADO.NET (SqlClient)</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="75"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Architecture N-tiers (DAL / BLL)</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Auth : JWT, Identity, BCrypt / PBKDF2</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="75"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Swagger / OpenAPI · xUnit</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="65"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-category cyber-card">
+                        <div class="card-border"></div>
+                        <h3>BASES DE DONNÉES</h3>
+                        <div class="skill-item">
+                            <span class="skill-name">SQL Server (SSMS, projets .sqlproj)</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">PostgreSQL · Supabase</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="75"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">MySQL / phpMyAdmin</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="75"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">MongoDB</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="60"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Migrations EF Core · DBeaver</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="75"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-category cyber-card">
+                        <div class="card-border"></div>
+                        <h3>CLOUD AZURE &amp; SERVEURS</h3>
+                        <div class="skill-item">
+                            <span class="skill-name">Azure App Service (déploiement Kudu)</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="75"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Azure Blob Storage (liens signés SAS)</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="75"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Azure AI Face (reconnaissance faciale)</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">IIS · Apache (.htaccess) · FTP</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="70"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Nom de domaine, DNS &amp; HTTPS (SSL)</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="70"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Docker</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="50"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-category cyber-card">
+                        <div class="card-border"></div>
+                        <h3>TEMPS RÉEL &amp; VIDÉO</h3>
+                        <div class="skill-item">
+                            <span class="skill-name">LiveKit (WebRTC : lives &amp; appels)</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="75"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">SignalR (WebSockets, chat)</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Streaming HLS (hls.js)</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="65"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-category cyber-card">
+                        <div class="card-border"></div>
+                        <h3>APIs &amp; SERVICES</h3>
+                        <div class="skill-item">
+                            <span class="skill-name">Conception d'API REST</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Supabase · LiveKit Cloud · Azure AI</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="75"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Sightengine (modération d'images)</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="70"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">GIPHY · Google News RSS · iptv-org</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="75"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">E-mails SMTP</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="70"></div>
                             </div>
                         </div>
                     </div>
@@ -433,6 +778,110 @@
                             <span class="skill-name">Sound Design</span>
                             <div class="skill-bar">
                                 <div class="skill-progress" data-progress="85"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-category cyber-card">
+                        <div class="card-border"></div>
+                        <h3>VÉHICULE AUTONOME & IA</h3>
+                        <div class="skill-item">
+                            <span class="skill-name">Python (entraînement IA)</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="70"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Isaac Sim (NVIDIA)</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="55"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">PyTorch / TorchRL</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="50"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">ROS2 (Robot OS)</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="45"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Simulation & Reinforcement Learning</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="55"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-category cyber-card">
+                        <div class="card-border"></div>
+                        <h3>CYBERSÉCURITÉ</h3>
+                        <div class="skill-item">
+                            <span class="skill-name">Bases réseaux & protocoles</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="50"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">CTF & Analyse de vulnérabilités</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="35"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Linux / Kali Linux</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="100"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Wireshark (analyse de trafic)</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="60"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Nmap (scan réseau)</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="60"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Burp Suite · OWASP Top 10</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="45"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Metasploit · Metasploitable</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="45"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">sqlmap · Nikto · Aircrack-ng</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="35"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">OSINT : Shodan · Maltego</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="40"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">VirtualBox (labs virtualisés)</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Bruce (firmware ESP32 + hat)</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="70"></div>
                             </div>
                         </div>
                     </div>

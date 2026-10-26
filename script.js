@@ -125,20 +125,6 @@ function addParticles() {
     animateParticles();
 }
 
-// Mouvement 3D cartes
-document.addEventListener('DOMContentLoaded', function() {
-    const cards = document.querySelectorAll('.cyber-card');
-    cards.forEach(card => {
-        card.addEventListener('mousemove', function(e) {
-            const rect = card.getBoundingClientRect();
-            const x = e.clientX - rect.left; const y = e.clientY - rect.top;
-            const rotateX = (y - rect.height / 2) / 20; const rotateY = (rect.width / 2 - x) / 20;
-            card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-5px)`;
-        });
-        card.addEventListener('mouseleave', () => card.style.transform = '');
-    });
-});
-
 // Cursor personnalisé
 const cursor = document.createElement('div');
 cursor.style.cssText = `position:fixed;width:20px;height:20px;border:2px solid #00ffff;border-radius:50%;pointer-events:none;z-index:10000;mix-blend-mode:difference;`;
@@ -181,7 +167,70 @@ function initAvatarSlideshow() {
     }
 }
 
+// Filtres du portfolio
+function initPortfolioFilters() {
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const cards = document.querySelectorAll('.portfolio-grid .project-card');
+
+    filterBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            const filter = btn.getAttribute('data-filter');
+            filterBtns.forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            cards.forEach(card => {
+                const visible = filter === 'all' || card.getAttribute('data-category') === filter;
+                card.classList.toggle('is-hidden', !visible);
+            });
+        });
+    });
+}
+
+// Recherche dans les compétences
+function initSkillsSearch() {
+    const input = document.getElementById('skills-search-input');
+    if (!input) return;
+    const categories = document.querySelectorAll('.skill-category');
+    const count = document.querySelector('.skills-search-count');
+    const empty = document.querySelector('.skills-empty');
+    // Ignore majuscules et accents : "securite" trouve "Sécurité"
+    const normalize = text => text.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '');
+
+    input.addEventListener('input', () => {
+        const query = normalize(input.value.trim());
+        let total = 0;
+
+        categories.forEach(category => {
+            const titleMatch = normalize(category.querySelector('h3').textContent).includes(query);
+            let visibleItems = 0;
+            category.querySelectorAll('.skill-item').forEach(item => {
+                const visible = !query || titleMatch || normalize(item.textContent).includes(query);
+                item.hidden = !visible;
+                if (visible) visibleItems++;
+            });
+            category.hidden = visibleItems === 0;
+            total += visibleItems;
+        });
+
+        count.textContent = query ? `${total} résultat${total > 1 ? 's' : ''}` : '';
+        empty.hidden = total > 0;
+    });
+}
+
+// Liens internes vers une section (ex. bandeau d'accueil -> portfolio)
+function initSectionLinks() {
+    document.querySelectorAll('[data-goto]').forEach(link => {
+        link.addEventListener('click', () => {
+            const target = document.querySelector(`.nav-btn[data-section="${link.getAttribute('data-goto')}"]`);
+            if (!target) return;
+            target.click();
+            document.querySelector('.cyber-nav').scrollIntoView({ behavior: 'smooth' });
+        });
+    });
+}
+
 document.addEventListener('DOMContentLoaded', () => {
     initAvatarSlideshow();
-    initNavigation(); // Assurez-vous d'avoir votre fonction de navigation
+    initPortfolioFilters();
+    initSkillsSearch();
+    initSectionLinks();
 });
